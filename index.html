@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Assingement Front</title>
+</head>
+
+<body>
+    <center>
+        <image src="https://upload.wikimedia.org/wikipedia/en/a/a2/Saylani_logo.png">
+        </image>
+        <h1>Sylani Online Academy</h1>
+        <form action="./back.html" method="get">
+            <fieldset style="width: 500px;">
+                <table bgcolor="lightGrey">
+                    <tr>
+                        <td colspan="2" align="center">
+                            <h3>Student Registration Form</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Name:<br /></td>
+                        <td>
+                            <input type="text" size="30" name="name" placeholder="Name" required minlength="3"
+                                maxlength="15">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Father Name:</td>
+                        <td>
+                            <input type="text" size="30" name="fname" placeholder="Father Name" required minlength="3"
+                                maxlength="15">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td>
+                            <input type="password" size="30" name="password" placeholder="Password" required
+                                minlength="3" maxlength="15">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td>
+                            <textarea placeholder="Address" name="address" cols="26" rows="5"></textarea required>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" id="male" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="male" required>
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Language:</td>
+                <td>
+                    <input type="checkbox" id="lan1" name="Language1" value="Urdu">
+                    <label for="lan1">Urdu</label>
+                    <input type="checkbox" id="lan2" name="Language1" value="English">
+                    <label for="lan2">English</label>
+                    <input type="checkbox" id="lan3" name="Language3" value="Arabic">
+                    <label for="lan3">Arabic</label>
+                    <input type="checkbox" id="lan4" name="Language4" value="Chines">
+                    <label for="lan4">Chines</label>
+                </td>
+            </tr>
+            <tr>
+                <td>DOB:</td>
+                <td>
+                    <input type="date" required>
+                </td>
+            </tr>
+            <tr>
+            <td>E-Mail Id:</td>
+            <td>
+                <input type="email" size="30" name="email" placeholder="E-Mail ID" required minlength="3"
+                    maxlength="15">
+            </td>
+         </tr>
+         <tr>
+         <td>Mobile Number:</td>
+         <td>
+             <input type="number" size="30" name="mobilenum" placeholder="Mobile Number" required minlength="3"
+                 maxlength="15">
+         </td>
+     </tr>
+     <tr>
+        <td>City:</td>
+        <td>
+            <Select name="city">
+                <option value="" selected disabled>Select Your City</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Karachi">Karachi</option>
+                <option value="Lahore">Lahore</option>
+            </Select>
+        </td>
+    </tr>
+            <tr>
+                <td>Hobbies:</td>
+                <td>
+                    <Select name="hobbies" multiple size="4" required>
+                        <option value="" selected disabled>Select Your Hobbies</option>
+                        <option value="Cricket">Cricket</option>
+                        <option value="Football">Football</option>
+                        <option value="Hockey">Hockey</option>
+                        <option value="Tennis">Tennis</option>
+                    </Select>
+                </td>
+            </tr>
+            <tr>
+                <td>Picture Upload:</td>
+                <td><input type="file" name="picture upload" value="Choose File" accept="image/*"></td>
+                <td>
+                    <input type="submit" value="Upload">
+                 </td>
+            </tr>
+            <tr>
+                <td colspan="1"></td>
+              <td><center><input type="submit" value="Submit Form"></td></center>
+            </tr>
+        </table>
+    </fieldset>
+</form></center>
+</body>
+
+</html>
